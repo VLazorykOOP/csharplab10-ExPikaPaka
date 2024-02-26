@@ -17,7 +17,7 @@ namespace Lab9_10CharpT {
         }
     }
 
-    public class CrimeEventArgs : EventArgs {
+    public class CrimeEventArgs {
         public string Location { get; }
         public string Description { get; }
 

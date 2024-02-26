@@ -186,7 +186,7 @@ namespace Lab9_10CSharpT {
             }
             Task t = new Task(f);
             t.Start();
-            Console.WriteLine("Text for paralel computation check");
+            Console.WriteLine("Text for parallel computation check");
 
             t.Wait();
             Console.WriteLine();
