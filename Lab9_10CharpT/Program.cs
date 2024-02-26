@@ -174,21 +174,9 @@ namespace Lab9_10CSharpT {
 
         static void task2() {
             Console.WriteLine("|===~        Testing task 2.1        ~===|");
+            NewTown sometown = new NewTown("Kansk", 20, 100);
+            sometown.LifeOurTown();
 
-            void f() {
-                City city = new City();
-                city.CrimeReported += (sender, e) =>
-                {
-                    Console.WriteLine($"Crime reported at {e.Location}: {e.Description}");
-                };
-
-                city.ReportCrime("Main Street", "Theft");
-            }
-            Task t = new Task(f);
-            t.Start();
-            Console.WriteLine("Text for parallel computation check");
-
-            t.Wait();
             Console.WriteLine();
         }
 
